@@ -6,8 +6,6 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'npm version'
-                sh 'npm install'
                 // Get some code from a GitHub repository
                 git branch: 'master', url: 'https://github.com/N-Kulev-93/AspNet-React-TypeScript-Webpack-SPA-Template'
                 sh 'docker build -t spa-template-test .'
