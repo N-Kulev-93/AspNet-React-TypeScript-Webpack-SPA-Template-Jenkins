@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools{
+        nodejs('24.19.0')
+    }
     stages {
         stage('Build') {
             steps {
