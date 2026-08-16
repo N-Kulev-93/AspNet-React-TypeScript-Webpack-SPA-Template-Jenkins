@@ -1,0 +1,6 @@
+*.user
+[Bb]in/
+[Oo]bj/
+.vs/
+node_modules/
+dist/
